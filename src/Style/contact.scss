@@ -65,3 +65,106 @@
     }
 
 }
+
+/* Media query for tablets and small devices */
+@media (max-width: 768px) {
+    .contact {
+        > main {
+            width: 90%;
+            height: auto;
+            border-radius: 0;
+            padding: 2rem;
+
+            > form {
+                margin: 3rem;
+                > div {
+                    width: 90%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    > label {
+                        width: 100%;
+                        margin: 0 0 0.5rem;
+                    }
+
+                    > input {
+                        width: 100%;
+                    }
+                }
+
+                > button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+/* Media query for small mobile devices */
+// @media (max-width: 480px) {
+//     .contact {
+//         > main {
+//             width: 95%;
+//             padding: 1rem;
+
+//             > form {
+//                 margin: 2rem;
+
+//                 > div {
+//                     > label {
+//                         font-size: 1rem;
+//                     }
+
+//                     > input {
+//                         padding: 0.8rem;
+//                     }
+//                 }
+
+//                 > button {
+//                     font-size: 0.9rem;
+//                     padding: 0.5rem;
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 480px) {
+    .contact {
+        > main {
+            width: 95%;
+            padding: 1rem;
+
+            > form {
+                margin: 2rem;
+
+                > div {
+                    display: flex;
+                    flex-direction: column;  /* Stack label and input vertically */
+                    align-items: flex-start; /* Align everything to the left */
+                    width: 100%;             /* Ensure div takes full width */
+
+                    > label {
+                        font-size: 1rem;
+                        margin-bottom: 0.0rem; /* Add spacing between label and input */
+                        width: 100%;           /* Ensure label takes full width */
+                    }
+
+                    > input {
+                        padding: 0.8rem;
+                        width: 100%;           /* Ensure input takes full width */
+                    }
+                }
+
+                > button {
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

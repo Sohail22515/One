@@ -14,7 +14,7 @@ function services() {
             showStatus={false} 
             showArrows={false}
             showThumbs={false}
-            interval={1000 }>
+            interval={1000}>
             <div>
                 <img src={img1} alt="Irem1" />
                 <p className='legend'>Full Stack</p>
